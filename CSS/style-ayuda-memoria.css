@@ -1,0 +1,179 @@
+#titulo {
+    color: blueviolet;
+}
+
+p.texto {
+    color: slateblue;
+}
+
+
+p.especial {
+    color: mediumaquamarine;
+}
+
+
+/* * {
+    font-size: 19px;
+} */
+
+/*Comentarios*/
+
+.color {
+    /* border: 10px #8FFA77 inset; */
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+#fondo {
+    background-color: rgba(255, 0, 0);
+
+    /* opacity: 0.30; */
+
+    /* background-image: url(kevin-2.jpg); */
+
+    background: #f00 url(kevin-2.jpg) repeat-y center top /100px 100px;
+
+    height: 200px;
+
+    /* background-size: 100px 100px; */
+
+    /* background-size: 200px 200px; */
+
+    /* background-repeat: repeat-y;
+
+    background-position: left center; */
+
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 15px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text {
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+    font-family: 'Playwrite PE';
+}
+
+a:link {
+    color: blueviolet;
+}
+
+a:visited {
+    color: grey;
+
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    /* list-style-type: none; */
+    /* padding-left: 0; */
+    /* list-style-position: inside; Los puntos se alinean con el texto y aparecen (no es estitico) */
+    list-style-type: circle;
+
+}
+
+table {
+    width: 100%; /*ancho*/
+    border-collapse: collapse; /*Eliminar la separacion de cada 1 de las celdas*/
+}
+
+th, td {
+    border: solid 1px #eee; /* seleccionamos las celdas, incluyendo los titulos*/
+    padding: 5px; /*mas espacio*/
+}
+
+th {
+    background-color: tomato; /*asignamos cabeceras para un solo color para ellas*/
+    color: white; /*color de la fuente por un color blanco*/
+    text-align: left;/*alinear texto a la izquierda*/
+
+}
+
+/*Seleccionar elementos pares o impares, dentro de una tabla, indicar un color diferente a cada elemento de la tabla*/
+/*nth-child() --> Nos permite seleccionar elementos en particular*/
+/* Colocamos abre cierra parentesis --> odd(par) o even(impar) */
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: aquamarine; /*pasar mouse por encima otorga un color, podemos utilizar hover, para cambiar el color de las filas*/
+}
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: red;
+
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    position: absolute;
+    left: 20px;
+     /* top: 25px; */
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+
+}
+
+.container {
+    height: 200px;
+}
+
+.right {
+    float: right;
+    width: 100px;
+}
+
+.column {
+    /* border: solid 0px #ddd; */
+    /* border-radius: 5px; */
+    margin: 0;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline;
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+
+}

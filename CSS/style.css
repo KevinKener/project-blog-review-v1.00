@@ -1,0 +1,129 @@
+
+/*Para el html*/
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Para el body */
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e50914; /* Línea inferior roja */
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Tomar todo el contenido de los post y centrar contenido, pero que el texto se encuentre a la izquierda*/
+/* Creo clase de container en el section y agrego el selector de container seguido del .*/
+/* El margin entrega la magia para que el contenido se centro, ya que usa un ancho de 400px, que coincide con los px de las imagenes*/
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/*Selector de section y article*/
+/*Con el padding horinztol 0.25rem vertical y 0 horizontal, es 0 para que no se separe la imagen*/
+/*Tambien hacemos que cuando se ponga el mouse sobre la foto se vea la manito, y que la transicion entre que exista y no la sombra sea mas suave*/ 
+/* Cursor pointer, transition (poder indicar que propiedades de css queremos que sean animadas, un inicio box shadow y el final, la sombra. */
+/* Origen y un final, como solo queremos box shadow, transition: box-shadow */
+/* luego hay que indicar el tiempo que queramos que la transicion tenga de incio y luego el final*/
+/* ease, linear, y ease se ve mas natural*/
+/* si ponemos all, para animar mas de una transicion, anima todas las propiedades de ese elementod el HTML*/
+
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: #ffffff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+/*Pasemos el mouse por la tarjeta y tenga un efecto*/
+section article:hover {
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+
+/*Selecciono el titulo y el parrafo para separarlos de los bordes*/
+section article h2, section article p {
+    margin: 1rem;
+}
+
+/*Selector del footer*/
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: #ffffff;
+}
+
+/* A la section que esta en nuestro footer, dejamos los links flotando a la derecha*/
+footer section {
+    float: right;
+}
+
+/*Luego acomodo el copyright, porque sino quedaba raro, ya que se encuentra mas abajo de los links*/
+/*En el inspeccionar el elemento, si colocamos el mouse encima aparecen los bordes naranjos, y significa que tiene margen*/
+/*Seleccionamos el parafo y eliminamos los margenes. MARGIN 0 */
+footer p {
+    margin: 0;
+}
+
+/*Seleccionamos los links con el selector a, para que se vean mejor*/
+/*Color blanco y le quitamos la decoracion*/
+/*Agregamos transition para el hover, y la animacion mas suave*/
+/* transition: color 0.3s ease; --> Le indicamos que solo va para el color y que tome 0.3 segundos y el algoritmo ease */
+footer a {
+    transition: color 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Le agregamos a los links que haga un efecto, cambie a un color mejor*/
+/*Agrego selector de a, pero con el elemento de hover*/
+/*Como el cambio era muy drastico, le agregamos una transicion a la propiedad de color*/
+
+footer a:hover {
+    color: cornflowerblue;
+
+}
+
+
+
+
+
+
+
+
+/* Fuentes */
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
